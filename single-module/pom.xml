@@ -142,9 +142,9 @@
       <scope>test</scope>
     </dependency>
 <dependency>
-    <groupId>org.spockframework</groupId>
-    <artifactId>spock-example</artifactId>
-    <version>1.0-20180320.123505-4</version>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.11</version>
 </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
