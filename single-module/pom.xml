@@ -17,12 +17,17 @@
   </properties>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/single-module-site</url>
-    </site>
-  </distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>9ff8aecb5ab4-releases</name>
+        <url>http://10.70.10.92:8081/artifactory/maven-snapshot-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>9ff8aecb5ab4-snapshots</name>
+        <url>http://10.70.10.92:8081/artifactory/maven-snapshot-repo</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <build>
     <finalName>${project.artifactId}</finalName>
@@ -136,7 +141,11 @@
       <version>4.10</version>
       <scope>test</scope>
     </dependency>
-
+<dependency>
+    <groupId>org.spockframework</groupId>
+    <artifactId>spock-example</artifactId>
+    <version>1.0-20180320.123505-4</version>
+</dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>hamcrest-core</artifactId>
